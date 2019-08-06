@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12 ">
+      <h1>Products</h1>
+
+
+  <div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-glasses-tab" data-toggle="pill" href="#v-pills-glasses" role="tab" aria-controls="v-pills-glasses" aria-selected="true">Glasses</a>
+
+      <a class="nav-link" id="v-pills-case-tab" data-toggle="pill" href="#v-pills-case" role="tab" aria-controls="v-pills-case" aria-selected="false">Cases</a>
+
+      <a class="nav-link" id="v-pills-mfcloth-tab" data-toggle="pill" href="#v-pills-mfcloth" role="tab" aria-controls="v-pills-mfcloth" aria-selected="false">Microfiber Clothes</a>
+
+      <a class="nav-link" id="v-pills-bundle-tab" data-toggle="pill" href="#v-pills-bundle" role="tab" aria-controls="v-pills-bundle" aria-selected="false">Bundle Pack</a>
+
+    </div>
+  </div>
+
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-glasses" role="tabpanel" aria-labelledby="v-pills-glasses-tab">
+
+    <div class="row">
+      <div class="col-md-4">
+      <h4>Glasses</h4>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="profile" src="../static/images/glasses.jpg" alt="glasses" height="150" width="250">
+          <h6>Model T-1000</h6>
+          <a class="stretched-link emaillink" href="#">Add to Shopping Cart</a>
+        </div>
+    <div class="col-md-7 ">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-case" role="tabpanel" aria-labelledby="v-pills-case-tab">
+        <h5>Case</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-mfcloth" role="tabpanel" aria-labelledby="v-pills-mfcloth-tab">
+        <h5>Microfiber Clothes</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-bundle" role="tabpanel" aria-labelledby="v-pills-bundle-tab">
+        <h5>Bundle Pack</h5>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

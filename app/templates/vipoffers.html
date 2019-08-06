@@ -1,0 +1,24 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+
+{% block app_content %}
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 ">
+        <h1>VIP Special Offers</h1>
+          <h5>Join our VIP offers list and recieve exclusive offers and coupons!</h5>
+            <div class="row ">
+              <div class="col-md-6">
+                <!-- - displays error messages -->
+                {% for fieldName, errorMessages in form.errors.items() %}
+                  {% for error in errorMessages %}
+                  <p class="error">{{ fieldName.title() }}: {{ error }}</p>
+                  {% endfor %}
+                {% endfor %}
+                {{ wtf.quick_form( form ) }}
+              </div> <!-- ends col-md-6 -->
+            </div> <!-- ends row -->
+      </div> <!-- col 12 -->
+    </div> <!-- ends row -->
+  </div> <!-- ends container -->
+{% endblock %}
