@@ -176,9 +176,13 @@ ol > li {
 
 footer {
   background-color: white;
-}
-
-footer p {
-
   padding: 20px;
 }
+
+.socialmedia {
+  margin-top: 20px;
+}
+/* footer p {
+
+  padding: 20px;
+} */
